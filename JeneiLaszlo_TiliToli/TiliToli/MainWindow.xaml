@@ -17,6 +17,7 @@
         <Button Content="7" x:Name="Button7" HorizontalAlignment="Left" Margin="15,270,0,0" VerticalAlignment="Top" Width="100" Height="100" FontSize="48" Click="Button1_Click"/>
         <Button Content="8" x:Name="Button8" HorizontalAlignment="Left" Margin="115,270,0,0" VerticalAlignment="Top" Width="100" Height="100" FontSize="48" Click="Button1_Click"/>
         <Button Content="0" x:Name="Button0" HorizontalAlignment="Left" Margin="215,270,0,0" VerticalAlignment="Top" Width="100" Height="100" FontSize="48" Click="Button1_Click"/>
-
+        <Button Content="Új játék" HorizontalAlignment="Left" Margin="175,415,0,0" VerticalAlignment="Top" Width="140" Height="40" FontSize="25" Click="Button_Click"/>
+        <Label x:Name="label" Content="" HorizontalAlignment="Left" Margin="45,10,0,0" VerticalAlignment="Top" Height="40" Width="240" FontSize="25"/>
     </Grid>
 </Window>
