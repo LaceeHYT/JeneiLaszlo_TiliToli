@@ -15,9 +15,6 @@ using System.Windows.Shapes;
 
 namespace TiliToli
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -35,7 +32,6 @@ namespace TiliToli
             var fTav = Math.Abs(ezGomb.Margin.Top - nullaGomb.Margin.Top);
             var vTav = Math.Abs(ezGomb.Margin.Left - nullaGomb.Margin.Left);
 
-            //A tömbben elfoglalt pozició
             int ezGombFelirat = int.Parse(ezGomb.Content.ToString());
             int ezGombIndex = Array.IndexOf(allas, ezGombFelirat);
             int nullaGombIndex = Array.IndexOf(allas, 0);
@@ -49,14 +45,17 @@ namespace TiliToli
                 allas[nullaGombIndex] = allas[ezGombFelirat];
                 allas[ezGombFelirat] = 0;
 
-                //Mikor lesz vége?
-                if (allas.SequenceEqual(kesz))
-                {
-                    //Mit csináljon ha kész
-                }
-                
             }
         }
+
+        private void Button2_Click(object sender, RoutedEventArgs e)
+        { 
+            if (allas.SequenceEqual(kesz))
+                {
+                    MessageBox.Show("Gratulálok!");
+                }
+        }
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Button0.Visibility = Visibility.Hidden;
